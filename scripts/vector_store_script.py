@@ -2,8 +2,8 @@ import os
 import json
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain.docstore.document import Document
-from langchain_community.embeddings import HuggingFaceEmbeddings
-from langchain_community.vectorstores import Chroma
+from langchain_huggingface import HuggingFaceEmbeddings
+from langchain_chroma import Chroma
 
 # --- Configuration ---
 KNOWLEDGE_BASE_PATH = "data/knowledge_base.json"
