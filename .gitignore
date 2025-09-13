@@ -81,5 +81,8 @@ data/processed/
 # mypy
 .mypy_cache/
 .dmypy.json
-dmypy.jsondata/chroma_db/
 data/chroma_db/
+data/chroma_db/**/*
+*.sqlite3
+*.bin
+*.pickle
