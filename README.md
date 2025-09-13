@@ -64,6 +64,9 @@ A comprehensive AI pipeline that:
 
 ## 🏗️ System Architecture
 
+<img width="1080" height="306" alt="image" src="https://github.com/user-attachments/assets/0620733b-ae35-42a0-80d0-1d5e5f0ef237" />
+
+
 ```mermaid
 graph TB
     subgraph "User Interface Layer"
