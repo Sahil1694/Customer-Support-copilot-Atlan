@@ -75,7 +75,7 @@ graph TB
     end
     
     subgraph "AI Pipeline Layer"
-        Classifier[🧠 Gemini 1.5 Flash<br/>Multi-class Classifier]
+        Classifier[🧠 Gemini 2.5 Flash<br/>Multi-class Classifier]
         RAG[🔍 RAG Pipeline]
         Reranker[📊 Cross-encoder<br/>Re-ranker]
     end
