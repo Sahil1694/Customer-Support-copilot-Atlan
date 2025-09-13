@@ -61,12 +61,16 @@ config/secrets.py
 *.key
 credentials.json
 
-# Data files (if sensitive)
-data/raw/
-data/processed/
-*.csv
-*.json
-*.xlsx
+# ChromaDB vector store (generated locally)
+data/chroma_db/
+data/chroma_db/**/*
+*.sqlite3
+*.bin
+*.pickle
+
+# Sensitive data files only
+data/raw/sensitive/
+data/processed/sensitive/
 
 # Streamlit
 .streamlit/secrets.toml
@@ -81,8 +85,3 @@ data/processed/
 # mypy
 .mypy_cache/
 .dmypy.json
-data/chroma_db/
-data/chroma_db/**/*
-*.sqlite3
-*.bin
-*.pickle

@@ -1,0 +1,28 @@
+[
+  {
+    "question": "How do I configure SSO providers in Atlan?",
+    "expected_keywords": ["SSO", "SAML", "OIDC", "identity"],
+    "allow_empty": false
+  },
+  {
+    "question": "What are the API rate limits for Atlan?",
+    "expected_keywords": ["API", "rate", "limit"],
+    "allow_empty": false
+  },
+  {
+    "question": "How to create a glossary and link terms to assets?",
+    "expected_keywords": ["glossary", "term", "asset"],
+    "allow_empty": false
+  },
+  {
+    "question": "How to track lineage for a table?",
+    "expected_keywords": ["lineage", "table"],
+    "allow_empty": true
+  }
+]
+
+
+
+
+
+

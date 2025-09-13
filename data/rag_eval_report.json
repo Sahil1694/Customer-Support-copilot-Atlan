@@ -1,0 +1,55 @@
+{
+  "summary": {
+    "total": 4,
+    "passed": 4,
+    "pass_rate": 100.0,
+    "citation_rate": 100.0,
+    "avg_latency_ms": 6507.7
+  },
+  "results": [
+    {
+      "index": 1,
+      "question": "How do I configure SSO providers in Atlan?",
+      "latency_ms": 4185.4,
+      "error": null,
+      "has_sources": true,
+      "num_sources": 4,
+      "passed_keywords_check": true,
+      "passed": true,
+      "answer_preview": "I do not have enough information to answer how to configure SSO providers in Atlan. The provided context explains how to manage SSO group mappings using the SDK's SSO client, including creating a new group mapping and specifying an SSO alias like Azure AD, but it does not detail the process for conf"
+    },
+    {
+      "index": 2,
+      "question": "What are the API rate limits for Atlan?",
+      "latency_ms": 3453.6,
+      "error": null,
+      "has_sources": true,
+      "num_sources": 4,
+      "passed_keywords_check": true,
+      "passed": true,
+      "answer_preview": "I do not have enough information to answer the question about the specific API rate limits for Atlan. The provided context describes what a `RateLimitError` or `RateLimitException` means (the Atlan server is being overwhelmed by requests) and how to configure network retries and timeouts, but it doe"
+    },
+    {
+      "index": 3,
+      "question": "How to create a glossary and link terms to assets?",
+      "latency_ms": 4574.2,
+      "error": null,
+      "has_sources": true,
+      "num_sources": 5,
+      "passed_keywords_check": true,
+      "passed": true,
+      "answer_preview": "To create a glossary, all assets must be wrapped in an entities array. You must provide the exact type name for the asset, which for a glossary is `AtlasGlossary`. You also need to provide the exact name of the asset and a `qualifiedName`. While the `qualifiedName` for glossaries will be replaced wi"
+    },
+    {
+      "index": 4,
+      "question": "How to track lineage for a table?",
+      "latency_ms": 13817.6,
+      "error": null,
+      "has_sources": true,
+      "num_sources": 4,
+      "passed_keywords_check": true,
+      "passed": true,
+      "answer_preview": "To track lineage for a table:\n\n1.  **Naming Convention:** A table's name should follow the `DATABASE_NAME.SCHEMA_NAME.TABLE_NAME` format.\n2.  **Inputs and Outputs:** You define the table as either an input (source) or an output (target) for the lineage.\n3.  **Events:** Each run of a job must consist"
+    }
+  ]
+}
