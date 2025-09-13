@@ -7,10 +7,7 @@ from typing import Dict, Any
 from pipeline.prompts import CLASSIFICATION_PROMPT
 
 # --- Part 1: Configuration ---
-
 # Configure the Gemini API key from environment variables
-# This setup allows the app to run both locally (with a .env file)
-# and in a deployed environment (like Streamlit Community Cloud)
 try:
     from dotenv import load_dotenv
     load_dotenv()
@@ -25,7 +22,6 @@ genai.configure(api_key=api_key)
 
 
 # --- Part 2: Core Classification Logic ---
-
 def _clean_llm_response(response_text: str) -> str:
     """
     Private helper function to clean the LLM's raw response.
@@ -75,11 +71,6 @@ def classify_ticket(ticket_text: str) -> Dict[str, Any]:
         }
 
 # --- Part 3: Standalone Execution for Bulk Processing ---
-
-# The `if __name__ == "__main__":` block allows this script to be run directly
-# from the command line. This is useful for performing the initial bulk
-# classification of the sample tickets before running the main Streamlit app.
-
 if __name__ == "__main__":
     # Note: These paths assume you are running the script from the `backend/` directory.
     # python -m pipeline.classifier

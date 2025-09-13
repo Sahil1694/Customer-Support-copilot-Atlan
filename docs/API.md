@@ -169,7 +169,7 @@ SIMILARITY_THRESHOLD=0.7
 ```python
 # Classifier configuration
 CLASSIFIER_CONFIG = {
-    "model": "gemini-1.5-flash",
+    "model": "gemini-2.5-flash",
     "temperature": 0.1,
     "max_output_tokens": 1000
 }
@@ -190,16 +190,6 @@ The API implements intelligent rate limiting:
 - **Gemini API**: 60 requests/minute (free tier)
 - **Batch processing**: Automatic retry with exponential backoff
 - **Caching**: Responses cached for 1 hour to reduce API calls
-
-## Performance Metrics
-
-### Latency Targets
-
-| Operation | Target | Typical |
-|-----------|---------|---------|
-| Classification | <2s | 1.2s |
-| RAG Response | <5s | 3.4s |
-| Document Retrieval | <1s | 0.6s |
 
 ### Accuracy Metrics
 
